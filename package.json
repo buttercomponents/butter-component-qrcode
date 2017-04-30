@@ -1,0 +1,35 @@
+{
+    "name": "butter-component-qrcode",
+    "version": "0.0.1",
+    "description": "A QR code component for butter, wrapping qrcode.react with title and not much more",
+    "main": "src/index.js",
+    "scripts": {
+        "prepublish": "npm run build",
+        "build": "webpack --config node_modules/butter-component-builder/webpack.build.js --progress --profile --colors",
+        "start": "node node_modules/butter-component-builder/server.js",
+        "lint": "eslint src",
+        "test": "eslint src"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/buttercomponents/butter-component-qrcode.git"
+    },
+    "keywords": [
+        "qrcode",
+        "react",
+        "butter",
+        "component"
+    ],
+    "author": "Niv Sardi <x@btn.sh>",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/buttercomponents/butter-component-qrcode/issues"
+    },
+    "homepage": "https://github.com/buttercomponents/butter-component-qrcode#readme",
+    "devDependencies": {
+        "butter-component-builder": "https://github.com/buttercomponents/butter-component-builder"
+    },
+    "dependencies": {
+        "qrcode.react": "^0.7.1"
+    }
+}
