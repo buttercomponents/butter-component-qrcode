@@ -4,7 +4,7 @@ import style from './style.styl';
 
 import QRCode from 'qrcode.react';
 
-let ButterQRCode = ({title, subtitle, settings, ...props}) => (
+let ButterQRCode = ({settings, ...props}) => (
     <div>
         <QRCode value={JSON.stringify({
                 ip: settings.ipAddress,
