@@ -6,8 +6,6 @@ import QRCode from 'qrcode.react';
 
 let ButterQRCode = ({title, subtitle, settings, ...props}) => (
     <div>
-        <h1>{title}</h1>
-        {subtitle?<h2>{subtitle}</h2>:null}
         <QRCode value={JSON.stringify({
                 ip: settings.ipAddress,
                 port: settings.httpApiPort,
@@ -18,5 +16,3 @@ let ButterQRCode = ({title, subtitle, settings, ...props}) => (
 )
 
 export default ButterQRCode
-
-
